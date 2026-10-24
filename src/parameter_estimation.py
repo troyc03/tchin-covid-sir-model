@@ -53,4 +53,6 @@ if __name__ == "__main__":
     plt.grid(True, which='both', linestyle='--', linewidth=0.5)
     plt.show()
 
-    
+    # Print R2 score for the fit
+    r2_score = 1 - (np.sum((y_data - sol_estimated.y[1])**2) / np.sum((y_data - np.mean(y_data))**2))
+    print(f"R2 Score of the Fit: {r2_score:.4f}")
