@@ -38,6 +38,13 @@ def plot_phase_portrait(beta, gamma, S_range, I_range, num_points=20):
             sol = solve_ivp(sir_model, t_span, initial_conditions, args=(beta, gamma), t_eval=t_eval)
             plt.plot(sol.y[0], sol.y[1], color='red')  # Plot S vs I
 
+    # Plot nullclines 
+    S_nullcline = np.linspace(S_range[0], S_range[1], 100)
+    I_nullcline = np.zeros_like(S_nullcline)
+    plt.plot(S_nullcline, I_nullcline, 'g--', label='dI/dt=0 (I=0)')  # dI/dt=0 nullcline
+    I_nullcline = (beta / gamma) * S_nullcline
+    plt.plot(S_nullcline, I_nullcline, 'k--', label='dS/dt=0 (I=β/γ * S)')  # dS/dt=0 nullcline
+
     # Plot critical point (disease-free equilibrium)
     plt.plot(1, 0, 'ko', label='Disease-Free Equilibrium (S=1, I=0)')
 
