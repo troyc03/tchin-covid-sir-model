@@ -25,25 +25,17 @@ The classical SIR model divides the population into three compartments:
 
 The model is governed by the following system of ordinary differential equations:
 
-\[
-\frac{dS}{dt}=-\beta\frac{SI}{N}
-\]
+$\dot{S} = \frac{dS}{dt}=-\beta\frac{SI}{N}$
 
-\[
-\frac{dI}{dt}=\beta\frac{SI}{N}-\gamma I
-\]
+$\dot{I} = \frac{dI}{dt}=\beta\frac{SI}{N}-\gamma I$
 
-\[
-\frac{dR}{dt}=\gamma I
-\]
+$\dot{R} = \frac{dR}{dt}=\gamma I$
 
 where \(N\) is the total population, \(\beta\) is the transmission rate, and \(\gamma\) is the removal rate.
 
 The basic reproduction number is defined as
 
-\[
-\mathcal{R}_0=\frac{\beta}{\gamma}.
-\]
+$\mathcal{R}_0=\frac{\beta}{\gamma}$
 
 A linearized approximation will also be investigated to characterize early epidemic growth and estimate the exponential growth rate and doubling time.
 
