@@ -25,11 +25,11 @@ The classical SIR model divides the population into three compartments:
 
 The model is governed by the following system of ordinary differential equations:
 
-$\dot{S} = \frac{dS}{dt}=-\beta\frac{SI}{N}$
+$$\dot{S} = \frac{dS}{dt}=-\beta\frac{SI}{N}$$
 
-$\dot{I} = \frac{dI}{dt}=\beta\frac{SI}{N}-\gamma I$
+$$\dot{I} = \frac{dI}{dt}=\beta\frac{SI}{N}-\gamma I$$
 
-$\dot{R} = \frac{dR}{dt}=\gamma I$
+$$\dot{R} = \frac{dR}{dt}=\gamma I$$
 
 where \(N\) is the total population, \(\beta\) is the transmission rate, and \(\gamma\) is the removal rate.
 
