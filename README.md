@@ -35,7 +35,7 @@ where \(N\) is the total population, \(\beta\) is the transmission rate, and \(\
 
 The basic reproduction number is defined as
 
-$\mathcal{R}_0=\frac{\beta}{\gamma}$
+$$\mathcal{R}_0=\frac{\beta}{\gamma}$$
 
 A linearized approximation will also be investigated to characterize early epidemic growth and estimate the exponential growth rate and doubling time.
 
